@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistik & Disiplin Trading</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Statistik Hari ini</h1>
+        <form id="formStatistik">
+            <label>Jumlah Entry:</label>
+            <input type="number" name="jumlah_entry" required />
+
+            <label>Win / Loss:</label>
+            <input type="text" name="win_loss" required />
+
+            <label>RR Rata-rata:</label>
+            <input type="text" name="rr_rata" required />
+
+            <label>Hasil Akhir:</label>
+            <select name="hasil_akhir" required>
+                <option value="Profit">Profit</option>
+                <option value="Breakeven">Breakeven</option>
+                <option value="Loss">Loss</option>
+            </select>
+
+            <h2>Checklist Disiplin</h2>
+
+            <label><input type="checkbox" name="checklist" value="1% risk" /> Menggunakan max 1% risk</label>
+            <label><input type="checkbox" name="checklist" value="Overtrade" /> Tidak overtrade (max 2 entry
+                valid)</label>
+            <label><input type="checkbox" name="checklist" value="FOMO" /> Tidak entry karena FOMO/dendam/impuls</label>
+            <label><input type="checkbox" name="checklist" value="Evaluasi" /> Evaluasi sebelum & sesudah entry</label>
+            <label><input type="checkbox" name="checklist" value="Berhenti saat target" /> Berhenti saat target
+                tercapai/rule dilanggar</label>
+
+            <label>Hari ke:</label>
+            <input type="number" name="hari_ke" required />
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
